@@ -12,6 +12,10 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index')->name('home');
-    $router->resource('lands', LandController::class);
+
+
+   $router->resource('khandnames', KhandnameController::class);
+
+  $router->resource('khandlanddis', KhandlanddisController::class);
 
 });
